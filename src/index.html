@@ -1,29 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>solar System</title>
-  </head>
-  <body>
-    <header class="speaker-form-header">
-      <h1>the submisisss</h1>
-      <p><em>Want to speak at our fake conference? Fill out this form.</em></p>
-    </header>
-    <form action="" method="get" class="speaker-form">
-      <div class="form-row">
-        <label for="full-name">Name</label>
-        <input id="full-name" name="full-name" type="text" />
-      </div>
-      <div class="form-row">
-        <label for="email">Email</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="joe@example.com"
-        />
-      </div>
-    </form>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>solar System</title>
+    </head>
+    <body>
+        <form class="form" novalidate>
+            <div class="countryDiv">
+                <label for="countryInput"> country:</label>
+                <input type="text" id="countryInput" maxlength="45" required/>
+            </div>
+            <div class="postalCodeDiv">
+                <label for="postalCodeInput"> Post code:</label>
+                <input type="text" id="postalCodeInput" required/>
+            </div>
+            <div class="emailDiv">
+                <label for="emailInput">email:</label>
+                <input type="email" id="emailInput" required/>
+            </div>
+
+            <div class="passwordDiv">
+                <label for="passwordInput">password:</label>
+                <input type="password" id="passwordInput" required/>
+            </div>
+            <div class="passwordConfirmationDiv">
+                <label for="passwordConfirmationInput">confirm password:</label>
+                <input type="password" id="passwordConfirmationInput" required/>
+            </div>
+            <div class="submitButtonDiv">
+                <button class="submitButton">Submit</button>
+            </div>
+        </form>
+    </body>
 </html>
